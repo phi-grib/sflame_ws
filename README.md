@@ -29,12 +29,12 @@ The page is divided in three regions:
 
 | Command | Equivalent Flame command | Description |
 | --- | --- | ---|
-| Clone | *python -c smanage -a publish -s NEWMODEL* | Clones the development version, creating a new version in the space repository. Versions are assigned sequential numbers |
-| Export | *python -c smanage -a export -s NEWMODEL* | Exports the space entry NEWMODE, creating a tar compressed file *NEWMODEL.tgz* which contains all the versions. |
-| Delete Space| *python -c smanage -a kill -s NEWMODEL* | Removes NEWMODEL from the space repository. **Use with extreme care**, since the removal will be permanent and irreversible  |
-| Delete Version | *python -c smanage -a remove -s NEWMODEL -v 2* | Removes the version specified from the NEWMODEL space repository |
-| New space | *python -c smanage -a new -s NEWMODEL* | Creates a new entry in the space repository  |
-| Import | *python -c smanage -a import -s NEWMODEL* | Imports file *NEWMODEL.tgz*, creating space NEWMODEL in the local space repository |
+| Clone | *python -c smanage -a publish -s NEWSPACE* | Clones the development version, creating a new version in the space repository. Versions are assigned sequential numbers |
+| Export | *python -c smanage -a export -s NEWSPACE* | Exports the space entry NEWSPACE, creating a tar compressed file *NEWMODEL.tgz* which contains all the versions. |
+| Delete Space| *python -c smanage -a kill -s NEWSPACE* | Removes NEWSPACE from the space repository. **Use with extreme care**, since the removal will be permanent and irreversible  |
+| Delete Version | *python -c smanage -a remove -s NEWSPACE -v 2* | Removes the version specified from the NEWSPACE space repository |
+| New space | *python -c smanage -a new -s NEWSPACE* | Creates a new entry in the space repository  |
+| Import | *python -c smanage -a import -s NEWSPACE* | Imports file *NEWSPACE.tgz*, creating space NEWSPACE in the local space repository |
 
 ### Search
 
