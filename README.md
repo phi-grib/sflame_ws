@@ -5,7 +5,7 @@ Flame_ws provides a simple web interface for managing existing spaces and runnin
 Flame_ws is in active development and **no stable release has been produced so far**. Even this README is under construction, so please excuse errors and inaccuracies.
 
 ## Installing
-Flame_ws asumes that Flame (https://github.com/phi-grib/flame) is already installed and reachable in the *PYTHONPATH*. In development environments where Flame is installed in another location, the full path must be defined (hardcoded) at the top of file `flame_ws.py`. 
+Flame_ws asumes that Flame (https://github.com/phi-grib/flame) is already installed and reachable in the *PYTHONPATH*. In development environments where Flame is installed in another location, the full path must be defined (hardcoded) at the top of file `sflame-ws.py`. 
 
 The server is started by typing:
 
@@ -17,9 +17,9 @@ To access the web graphical interface, open a web browser and enter the address 
 
 The web page contains two tabs
 
-### Manage
+### sManage
 
-![Alt text](images/flame-ws-manage.png?raw=true "manage tab")
+![Alt text](images/flame-ws-smanage.png?raw=true "smanage tab")
 
 The page is divided in three regions:
 * Spaces available. A list of existing spaces and versions, in an expandable tree
@@ -28,16 +28,16 @@ The page is divided in three regions:
 
 | Command | Equivalent Flame command | Description |
 | --- | --- | ---|
-| Clone | *python -c manage -a publish -s NEWMODEL* | Clones the development version, creating a new version in the space repository. Versions are assigned sequential numbers |
-| Export | *python -c manage -a export -s NEWMODEL* | Exports the space entry NEWMODE, creating a tar compressed file *NEWMODEL.tgz* which contains all the versions. |
-| Delete Space| *python -c manage -a kill -s NEWMODEL* | Removes NEWMODEL from the space repository. **Use with extreme care**, since the removal will be permanent and irreversible  |
-| Delete Version | *python -c manage -a remove -s NEWMODEL -v 2* | Removes the version specified from the NEWMODEL space repository |
-| New space | *python -c manage -a new -s NEWMODEL* | Creates a new entry in the space repository  |
-| Import | *python -c manage -a import -s NEWMODEL* | Imports file *NEWMODEL.tgz*, creating space NEWMODEL in the local space repository |
+| Clone | *python -c smanage -a publish -s NEWMODEL* | Clones the development version, creating a new version in the space repository. Versions are assigned sequential numbers |
+| Export | *python -c smanage -a export -s NEWMODEL* | Exports the space entry NEWMODE, creating a tar compressed file *NEWMODEL.tgz* which contains all the versions. |
+| Delete Space| *python -c smanage -a kill -s NEWMODEL* | Removes NEWMODEL from the space repository. **Use with extreme care**, since the removal will be permanent and irreversible  |
+| Delete Version | *python -c smanage -a remove -s NEWMODEL -v 2* | Removes the version specified from the NEWMODEL space repository |
+| New space | *python -c smanage -a new -s NEWMODEL* | Creates a new entry in the space repository  |
+| Import | *python -c smanage -a import -s NEWMODEL* | Imports file *NEWMODEL.tgz*, creating space NEWMODEL in the local space repository |
 
 ### Search
 
-![Alt text](images/flame-ws-predict.png?raw=true "Search tab")
+![Alt text](images/flame-ws-search.png?raw=true "Search tab")
 
 Select a SDFile in the *Input* field, using the browse button. Select the *space* and *version* and press the *Search* button. After a short while, the results are shown in tabular format.
 
