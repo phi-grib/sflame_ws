@@ -1,16 +1,16 @@
-# Flame_ws
+# sFlame_ws
 
-Flame_ws provides a simple web interface for managing existing spaces and running similarity search. 
+sFlame_ws provides a simple web interface for managing existing spaces and running similarity search. 
 
-Flame_ws is in active development and **no stable release has been produced so far**. Even this README is under construction, so please excuse errors and inaccuracies.
+sFlame_ws is in active development and **no stable release has been produced so far**. Even this README is under construction, so please excuse errors and inaccuracies.
 
 ## Installing
-Flame_ws asumes that Flame (https://github.com/phi-grib/flame) is already installed and reachable in the *PYTHONPATH*. In development environments where Flame is installed in another location, the full path must be defined (hardcoded) at the top of file `sflame-ws.py`. 
+sFlame_ws asumes that Flame (https://github.com/phi-grib/flame) is already installed and reachable in the *PYTHONPATH*. In development environments where Flame is installed in another location, the full path must be defined (hardcoded) at the top of file `sflame-ws.py`. 
 
 The server is started by typing:
 
 ```sh
-python flame-ws.py 
+python sflame-ws.py 
 ```	
 
 To access the web graphical interface, open a web browser and enter the address *http://localhost:8081*
