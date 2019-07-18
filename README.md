@@ -10,6 +10,7 @@ sFlame_ws asumes that Flame (https://github.com/phi-grib/flame) is already insta
 The server is started by typing:
 
 ```sh
+conda activate flame
 cd sflame_ws/
 python sflame-ws.py 
 ```	
