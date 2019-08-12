@@ -373,8 +373,7 @@ function getInfo() {
     $("#tBody").empty();
     var space = $("#hiddenInput").val();
     var version = $("#hiddenInputChild").val();
-    var output = "JSON";
-    $.post('/spaceInfo', { "space": space, "version": version, "output": output })
+    $.post('/spaceInfo', { "space": space, "version": version})
         .done(function (result) {
             try {
                 result = JSON.parse(result);

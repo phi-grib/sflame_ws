@@ -153,8 +153,8 @@ class FlameInfoWS(object):
 @cherrypy.expose
 class FlamespaceInfo(object):
     @cherrypy.tools.accept(media='text/plain')
-    def POST(self, space, version, output):
-        result = smanage.action_info(space, numeric_version(version), output)
+    def POST(self, space, version):
+        result = smanage.action_info(space, numeric_version(version))
         return result[1]
 
 @cherrypy.expose
